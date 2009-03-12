@@ -4,9 +4,9 @@
 import sys
 from optparse import OptionParser
 
-def _test():
+def _test(verbose=None):
     import doctest
-    doctest.testmod()
+    doctest.testmod(verbose=verbose)
 
 def _profile_main(filename=None):
     import cProfile, pstats
@@ -39,7 +39,7 @@ if __name__ == "__main__":
 
     (options, args) = parser.parse_args()
 
-       if options.verbose:
+    if options.verbose:
         def really_blurt(s, f=()):
             sys.stderr.write(s % f + '\n')
         _blurt = really_blurt
