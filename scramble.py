@@ -1,5 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+#
+# An example script using the boilerplate, to accompany the slideshow
+# at <http://www.slideshare.net/saniac/the-bones-of-a-nice-python-script>.
+
 
 # By using env, we'll get whatever python is on the user's path.
 # Note: on some rare Unixes env is in /bin .
